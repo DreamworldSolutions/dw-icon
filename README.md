@@ -20,6 +20,13 @@ material icon (if necessary). And can add any application specific icons as well
 - disabled (Boolean)
 - active (Boolean)
 
+## Custom CSS Properties
+
+```
+--dw-icon-color-active
+--dw-icon-color
+--dw-icon-color-disabled
+```
 
 ## Size 
 By default icon is rendered in `24px` size. You can render it in different size when needed.
