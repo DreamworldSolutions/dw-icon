@@ -14,10 +14,15 @@ npm install --save @dreamworld/dw-icon
 It internally uses `@material/mwc-icon` to render material icons. But, User is allowed to override any of the 
 material icon (if necessary). And can add any application specific icons as well.
 
+## Why did we create separate element than `mwc-icon`?
+In mwc-icon we can't override any icon OR can't add application specific icons. So, When mwc-icon is used by 
+the inter-app re-usable web-component, application has no way to customize it's icon.
+
 ## Properties
 - name (String)
 - size (Number)
-- disabled (Boolean)
+- disabled (Boolean), `disabled` has higher priority, so, when  `active` and `disabled` both are specified. It will be
+ effectively `disabled`.
 - active (Boolean)
 
 ## Custom CSS Properties
