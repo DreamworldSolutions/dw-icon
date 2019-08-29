@@ -1,6 +1,6 @@
 {
   "name": "@dw/dw-icon",
-  "version": "1.0.0",
+  "version": "1.0.0-SNAPSHOT",
   "description": "An element, used to show an icon in Dreamworld Apps.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10"
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "@dw/flex-layout": "^1.0.5"
   },
   "homepage": "https://github.com/DreamworldSolutions/dw-icon#readme"
 }

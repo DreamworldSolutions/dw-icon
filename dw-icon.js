@@ -18,7 +18,7 @@ export class DwIcon extends LitElement {
     return [
       css`
         :host {
-          display: block;
+          display: inline-flex;
         }
         mwc-icon svg {
           fill: var(--dw-icon-color);
@@ -70,7 +70,7 @@ export class DwIcon extends LitElement {
     return html `
       ${this.size ? html `
         <style>
-          :host mwc-icon {
+          mwc-icon {
             --mdc-icon-size: ${this.size}px;
           }
         </style>
@@ -99,14 +99,14 @@ export class DwIcon extends LitElement {
    * @return {String} return icon
    */
   _renderIcon(name, size){
-    if(size){
-      name = `${name}_${size}`;
+    if(this.constructor._iconsMap && this.constructor._iconsMap[`${name}_${size}`]){
+      return this.constructor._iconsMap[`${name}_${size}`];
     }
 
     if(this.constructor._iconsMap && this.constructor._iconsMap[name]){
       return this.constructor._iconsMap[name];
     }
-
+    
     return name;
   }
 }
