@@ -1,0 +1,31 @@
+{
+  "name": "@dreamworld/dw-icon",
+  "version": "0.0.0-development",
+  "description": "An element, used to show an icon in Dreamworld Apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamworldSolutions/dw-icon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DreamworldSolutions/dw-icon/issues"
+  },
+  "dependencies": {
+    "@material/mwc-icon": "^0.6.0",
+    "lit-element": "^2.2.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "@dreamworld/flex-layout": "^1.0.0",
+    "semantic-release": "beta"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/DreamworldSolutions/dw-icon#readme"
+}
