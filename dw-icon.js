@@ -10,7 +10,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 import { css, LitElement, html } from 'lit-element';
 
-// These are the mwc-icon needed by this element
 import '@material/mwc-icon';
 
 export class DwIcon extends LitElement {
@@ -74,14 +73,9 @@ export class DwIcon extends LitElement {
             --mdc-icon-size: ${this.size}px;
           }
         </style>
-      ` : html ``}
-      <mwc-icon>${this._renderIcon(this.name,this.size)}</mwc-icon>
+      ` : ''}
+      <mwc-icon>${this._renderIcon(this.name, this.size)}</mwc-icon>
     `
-  }
-
-  constructor(){
-    super();
-    this._iconsMap = {};
   }
 
   /**
