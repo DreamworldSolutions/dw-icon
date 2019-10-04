@@ -20,12 +20,15 @@
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10",
     "@dreamworld/flex-layout": "^1.0.0",
-    "semantic-release": "beta"
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "semantic-release": "16.0.0-beta.23"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "@semantic-release/npm": "5.2.0-beta.5"
   },
   "homepage": "https://github.com/DreamworldSolutions/dw-icon#readme"
 }
