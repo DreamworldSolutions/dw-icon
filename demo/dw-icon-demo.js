@@ -92,6 +92,17 @@ export class DwIconDemo extends LitElement {
         </div>
       </section>
     </section>
+
+    <section>
+      <h3> Backward compatible for get Icon method</h3>
+      <section class="layout horizontal">
+        <div class="layout vertical center">
+          <h4>more vert</h4>
+          <dw-icon name="navigator.more_vert"></dw-icon>
+        </div>
+        </div>
+      </section>
+    </section>
     `
   }
 }

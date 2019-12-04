@@ -74,7 +74,7 @@ export class DwIcon extends LitElement {
           }
         </style>
       ` : ''}
-      <mwc-icon>${this._renderIcon(this.name, this.size)}</mwc-icon>
+      <mwc-icon>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
     `
   }
 
@@ -102,6 +102,22 @@ export class DwIcon extends LitElement {
     }
     
     return name;
+  }
+  
+  /**
+   * Support For `getIcon` backward compatible because in old icon name pased `{categoryName}.{iconName}`.
+   * @returns {String} icon name.
+   */
+  _getIconName(iconName) {
+    if(!iconName) {
+      return '';
+    }
+
+    let aIcon = iconName.split('.');
+    if(aIcon.length > 2) {
+      throw new Error('valid icon name is passed.');
+    }
+    return aIcon[aIcon.length - 1];
   }
 }
 
