@@ -23,6 +23,8 @@ export class DwIcon extends LitElement {
         }
         mwc-icon svg {
           fill: var(--dw-icon-color);
+          width: var(--dw-icon-width, 24px);
+          height: var(--dw-icon-height, 24px);
         }
         mwc-icon {
           color: var(--dw-icon-color);
