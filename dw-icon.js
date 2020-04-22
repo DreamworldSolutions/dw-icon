@@ -41,6 +41,9 @@ export class DwIcon extends LitElement {
         :host([disabled]) mwc-icon {
           color: var(--dw-icon-color-disabled);
         }
+        :host([disabled]) {
+          pointer-events: none;
+        }
       `
     ];
   }
