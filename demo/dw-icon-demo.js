@@ -8,7 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-import { css, LitElement, html, svg } from 'lit-element';
+import { css, html, svg } from 'lit-element';
+import { LitElement } from '@dreamworld/pwa-helpers/lit-element.js';
 import { DwIcon } from '../dw-icon';
 
 // These are the dw styles element needed by this element.
