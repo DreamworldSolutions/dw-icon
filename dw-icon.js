@@ -84,7 +84,7 @@ export class DwIcon extends LitElement {
    * @param {Object} iconsMap 
    */
   static addIcons(iconsMap){
-    this._iconsMap = iconsMap;
+    this._iconsMap = {...this._iconsMap, ...iconsMap};
   }
 
   /**
