@@ -16,7 +16,7 @@
     "url": "https://github.com/DreamworldSolutions/dw-icon/issues"
   },
   "dependencies": {
-    "@dreamworld/pwa-helpers": "^1.7.1",
+    "@dreamworld/pwa-helpers": "^1.11.1",
     "@material/mwc-icon": "0.20.0",
     "lit-element": "^2.2.0"
   },
