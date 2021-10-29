@@ -24,6 +24,7 @@ the inter-app re-usable web-component, application has no way to customize it's 
 - disabled (Boolean), `disabled` has higher priority, so, when  `active` and `disabled` both are specified. It will be
  effectively `disabled`.
 - active (Boolean)
+- iconFont (String (ENUM)), possible values: `FILLED` and `OUTLINED`. Default is `FILLED`
 
 ## Custom CSS Properties
 

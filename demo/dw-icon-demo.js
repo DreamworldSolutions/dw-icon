@@ -104,6 +104,23 @@ export class DwIconDemo extends LitElement {
         </div>
       </section>
     </section>
+
+    <section>
+      <h3> Outlined Icons</h3>
+      <section class="layout horizontal">
+        <div class="layout vertical center">
+          <h4>Media</h4>
+          <dw-icon name="perm_media" iconFont="OUTLINED"></dw-icon>
+        </div>
+
+        <div class="layout vertical center">
+          <h4>Mark as unread</h4>
+          <dw-icon name="mark_as_unread" iconFont="OUTLINED"></dw-icon>
+        </div>
+
+        </div>
+      </section>
+    </section>
     `
   }
 }
