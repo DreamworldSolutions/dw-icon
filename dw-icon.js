@@ -85,7 +85,7 @@ export class DwIcon extends LitElement {
 
   constructor(){
     super();
-    this.iconFont = 'FILLED';
+    this.iconFont = 'FILLED'; 
   }
 
   render(){
