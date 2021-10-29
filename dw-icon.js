@@ -45,6 +45,10 @@ export class DwIcon extends LitElement {
         :host([disabled]) {
           pointer-events: none;
         }
+
+        :host([iconfont='OUTLINED']) {
+          --mdc-icon-font: 'Material Icons Outlined';
+        }
       `
     ];
   }
@@ -69,8 +73,19 @@ export class DwIcon extends LitElement {
       /**
        * `true` if icon is active
        */
-      active: { type: Boolean }
+      active: { type: Boolean },
+
+      /**
+       * Type of the icon. By default it shows FILLED icon.
+       * Possible values: FILLED and OUTLINED
+       */
+      iconFont: { type: String, reflect: true }
     }
+  }
+
+  constructor(){
+    super();
+    this.iconFont = 'FILLED'; 
   }
 
   render(){
