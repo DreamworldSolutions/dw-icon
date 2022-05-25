@@ -125,4 +125,4 @@ export class DwIconDemo extends LitElement {
   }
 }
 
-window.customElements.define('dw-icon-demo', DwIconDemo);
+window.customElements.define('dw-icon-demo', DwIconDemo); 
