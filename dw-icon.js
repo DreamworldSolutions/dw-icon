@@ -75,27 +75,27 @@ export class DwIcon extends LitElement {
 
   constructor(){
     super();
-    this.iconFont = 'FILLED'; 
+    this.iconFont = 'FILLED';
   }
 
   render(){
     return html`
-      <mwc-icon style=${this.size ? styleMap({ '--mdc-icon-size': `${this.size}px`}) : ''}>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
+      <mwc-icon style=${this.size ? styleMap({ '--mdc-icon-size': `${this.size}px`, '--dw-icon-width': `${this.size}px`, '--dw-icon-height': `${this.size}px` }) : ''}>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
     `;
   }
 
   /**
    * set '_iconsMap' property
-   * @param {Object} iconsMap 
+   * @param {Object} iconsMap
    */
   static addIcons(iconsMap){
     this._iconsMap = {...this._iconsMap, ...iconsMap};
   }
 
   /**
-   * 
-   * @param {String} name 
-   * @param {String} size 
+   *
+   * @param {String} name
+   * @param {String} size
    * @return {String} return icon
    */
   _renderIcon(name, size){
@@ -106,10 +106,10 @@ export class DwIcon extends LitElement {
     if(this.constructor._iconsMap && this.constructor._iconsMap[name]){
       return this.constructor._iconsMap[name];
     }
-    
+
     return name;
   }
-  
+
   /**
    * Support For `getIcon` backward compatible because in old icon name pased `{categoryName}.{iconName}`.
    * @returns {String} icon name.
