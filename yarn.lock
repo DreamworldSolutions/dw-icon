@@ -30,14 +30,15 @@
   dependencies:
     lit-element "^2.1.0"
 
-"@dreamworld/pwa-helpers@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.7.1.tgz#37903cc22b8995271906533411165f002be71ed7"
-  integrity sha512-aFJ675QH0yGKL+FdpPSRCdFsWO6B6CMZSxOzVNGlux2jX9faCEHU2iBQR7QfTADABknxrdrvrPQPS4aEH+G2wA==
+"@dreamworld/pwa-helpers@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.13.0.tgz#6cfc6a95ad59696ab9d15bcfcfb9030dedaf1776"
+  integrity sha512-pvWBbycsutqgJn8lAWqirfs0s8L4Lmk0p1SejqGh1SRRgiXWVybnzhwD9rlE2yBaxzUxDCyhsL8IW5kqAtqDIg==
   dependencies:
     bowser "^2.8.1"
-    lit-element "^2.2.1"
-    lodash-es "^4.17.15"
+    lit "^2.3.1"
+    lit-element "^3.2.2"
+    lodash-es "^4.17.21"
     pwa-helpers "^0.9.1"
 
 "@lit/reactive-element@^1.3.0":
@@ -45,10 +46,15 @@
   resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.3.2.tgz#43e470537b6ec2c23510c07812616d5aa27a17cd"
   integrity sha512-A2e18XzPMrIh35nhIdE4uoqRzoIpEU5vZYuQN4S3Ee1zkGdYC27DP12pewbw/RLgPHzaE4kx/YqxMzebOpm0dA==
 
-"@material/mwc-icon@^0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@material/mwc-icon/-/mwc-icon-0.26.1.tgz#056b29b588d0e2ae5ccf857780c46b0012d9554e"
-  integrity sha512-RPcVPn+5p6hA2HjX/0wkeHQuxkJKgXMg47ffw+vhIw28qM8mprSv13hpUgrghb0f7xBvuPhf/kLb37V4xkRfwg==
+"@lit/reactive-element@^1.4.0":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.4.1.tgz#3f587eec5708692135bc9e94cf396130604979f3"
+  integrity sha512-qDv4851VFSaBWzpS02cXHclo40jsbAjRXnebNXpm0uVg32kCneZPo9RYVQtrTNICtZ+1wAYHu1ZtxWSWMbKrBw==
+
+"@material/mwc-icon@^0.27.0":
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/@material/mwc-icon/-/mwc-icon-0.27.0.tgz#f25ecdd7fe54d810d7d655ba05251169f78b84fd"
+  integrity sha512-Sul44I37M9Ewynn0A9DjkEBrmll2VtNbth6Pxj7I1A/EAwEfaCrPvryyGqfIu1T2hTsRcaojzQx6QjF+B5QW9A==
   dependencies:
     lit "^2.0.0"
     tslib "^2.0.1"
@@ -2264,14 +2270,14 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lit-element@2.3.1, lit-element@^2.1.0, lit-element@^2.2.0, lit-element@^2.2.1, lit-element@^3.2.0:
+lit-element@2.3.1, lit-element@^2.1.0, lit-element@^3.2.0, lit-element@^3.2.2:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
   integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
   dependencies:
     lit-html "^1.1.1"
 
-lit-html@1.2.1, lit-html@^1.1.1, lit-html@^2.2.0:
+lit-html@1.2.1, lit-html@^1.1.1, lit-html@^2.2.0, lit-html@^2.3.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.1.tgz#1fb933dc1e2ddc095f60b8086277d4fcd9d62cc8"
   integrity sha512-GSJHHXMGLZDzTRq59IUfL9FCdAlGfqNp/dEa7k7aBaaWD+JKaCjsAk9KYm2V12ItonVaYx2dprN66Zdm1AuBTQ==
@@ -2284,6 +2290,15 @@ lit@^2.0.0:
     "@lit/reactive-element" "^1.3.0"
     lit-element "^3.2.0"
     lit-html "^2.2.0"
+
+lit@^2.0.2, lit@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/lit/-/lit-2.3.1.tgz#2cf1c2042da1e44c7a7cc72dff2d72303fd26f48"
+  integrity sha512-TejktDR4mqG3qB32Y8Lm5Lye3c8SUehqz7qRsxe1PqGYL6me2Ef+jeQAEqh20BnnGncv4Yxy2njEIT0kzK1WCw==
+  dependencies:
+    "@lit/reactive-element" "^1.4.0"
+    lit-element "^3.2.0"
+    lit-html "^2.3.0"
 
 load-json-file@^4.0.0:
   version "4.0.0"
@@ -2333,10 +2348,10 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
-lodash-es@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
-  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
