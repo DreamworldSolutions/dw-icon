@@ -1,6 +1,5 @@
-import { css, html } from 'lit-element';
-import { LitElement } from '@dreamworld/pwa-helpers/lit-element.js';
-import { styleMap } from 'lit-html/directives/style-map.js';
+import { LitElement, css, html } from 'lit';
+import { styleMap } from 'lit/directives/style-map.js';
 
 // These are the mwc element needed by this element.
 import '@material/mwc-icon';
