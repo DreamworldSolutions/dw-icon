@@ -4,7 +4,6 @@ import { DwIcon } from '../dw-icon';
 // These are the dw styles element needed by this element.
 import { flexLayout } from '@dreamworld/flex-layout/flex-layout.js';
 import { alignment } from '@dreamworld/flex-layout/flex-layout-alignment.js';
-
 import '@material/mwc-icon';
 
 DwIcon.addIcons(
