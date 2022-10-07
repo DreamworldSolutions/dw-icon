@@ -4,7 +4,8 @@
   "description": "An element, used to show an icon in Dreamworld Apps.",
   "main": "dw-icon.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wds --node-resolve --app-index demo/index.html --open --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "@material/mwc-icon": "^0.27.0"
   },
   "devDependencies": {
+    "@web/dev-server": "^0.1.34",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "semantic-release": "17.0.8"
   },
