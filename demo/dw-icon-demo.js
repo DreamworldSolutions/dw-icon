@@ -1,10 +1,8 @@
-import { LitElement, css, html, svg } from '@dreamworld/pwa-helpers/lit.js';
+import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
 import { DwIcon } from '../dw-icon';
 
-// These are the dw styles element needed by this element.
-import { flexLayout } from '@dreamworld/flex-layout/flex-layout.js';
-import { alignment } from '@dreamworld/flex-layout/flex-layout-alignment.js';
 import '@material/mwc-icon';
+import { svg } from 'lit';
 
 DwIcon.addIcons(
   { 
@@ -19,8 +17,6 @@ DwIcon.addIcons(
 export class DwIconDemo extends LitElement {
   static get styles() {
     return [
-      flexLayout,
-      alignment,
       css`
         :host {
           display: block;
@@ -37,6 +33,15 @@ export class DwIconDemo extends LitElement {
          section div {
           margin: 10px 20px;
         }
+        .container{
+          display:flex;
+          flex-direction: row;
+        }
+        .icon{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
       `
     ];
   }
@@ -45,23 +50,23 @@ export class DwIconDemo extends LitElement {
     return html `
      <section>
       <h3> Material Icons </h3>
-      <section class="layout horizontal">
-        <div class="layout vertical center">
+      <section class="container">
+        <div class="icon">
           <h4>Default</h4>
           <dw-icon name="perm_media"></dw-icon>
         </div>
 
-        <div class="layout vertical center">
+        <div class="icon">
           <h4>Active</h4>
           <dw-icon name="perm_media" active class="activeIcon"></dw-icon>
         </div>
 
-        <div class="layout vertical center">
+        <div class="icon">
           <h4>Disabled</h4>
           <dw-icon name="perm_media" disabled class="disabledIcon"></dw-icon>
         </div>
 
-        <div class="layout vertical center">
+        <div class="icon">
           <h4>Size: 48</h4>
           <dw-icon name="perm_media" size="48"></dw-icon>
         </div>
@@ -69,13 +74,13 @@ export class DwIconDemo extends LitElement {
     </section>
     <section>
       <h3> Custom SVG Icons </h3>
-      <section class="layout horizontal">
-        <div class="layout vertical center">
+      <section class="container">
+        <div class="icon">
           <h4>community</h4>
           <dw-icon name="wellness_community" id="customIcon"></dw-icon>
         </div>
 
-        <div class="layout vertical center">
+        <div class="icon">
           <h4>star (32)</h4>
           <dw-icon name="star" id="sizeIcon" size="32"></dw-icon>
         </div>
@@ -84,8 +89,8 @@ export class DwIconDemo extends LitElement {
 
     <section>
       <h3> Backward compatible for get Icon method</h3>
-      <section class="layout horizontal">
-        <div class="layout vertical center">
+      <section class="container">
+        <div class="icon">
           <h4>more vert</h4>
           <dw-icon name="navigator.more_vert"></dw-icon>
         </div>
@@ -95,13 +100,13 @@ export class DwIconDemo extends LitElement {
 
     <section>
       <h3> Outlined Icons</h3>
-      <section class="layout horizontal">
-        <div class="layout vertical center">
+      <section class="container">
+        <div class="icon">
           <h4>Media</h4>
           <dw-icon name="perm_media" iconFont="OUTLINED"></dw-icon>
         </div>
 
-        <div class="layout vertical center">
+        <div class="icon">
           <h4>Mark as unread</h4>
           <dw-icon name="mark_as_unread" iconFont="OUTLINED"></dw-icon>
         </div>

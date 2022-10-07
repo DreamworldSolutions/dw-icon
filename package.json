@@ -16,22 +16,17 @@
     "url": "https://github.com/DreamworldSolutions/dw-icon/issues"
   },
   "dependencies": {
-    "@dreamworld/pwa-helpers": "^1.13.0",
-    "@material/mwc-icon": "^0.27.0",
-    "lit": "^2.0.2"
+    "@dreamworld/pwa-helpers": "^1.13.1",
+    "@material/mwc-icon": "^0.27.0"
   },
   "devDependencies": {
-    "@dreamworld/flex-layout": "^1.0.0",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "semantic-release": "17.0.8"
   },
   "publishConfig": {
     "access": "public"
   },
-  "resolutions": {
-    "lit-element": "2.3.1",
-    "lit-html": "1.2.1"
-  },
+  "resolutions": {},
   "homepage": "https://github.com/DreamworldSolutions/dw-icon#readme",
   "release": {
     "branches": [

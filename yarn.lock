@@ -23,17 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dreamworld/flex-layout@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@dreamworld/flex-layout/-/flex-layout-1.1.0.tgz#5226c26107edcfbfffac48de57adb5c2e13e18f0"
-  integrity sha512-0pojXcWirsDahr7qZseL59fJtiRDgkrKZmoo61vCAO+Zn9v8t1Vd7VygASGM7MNjJlqDBjrxaIXueEL40bfQMw==
-  dependencies:
-    lit-element "^2.1.0"
-
-"@dreamworld/pwa-helpers@^1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.13.0.tgz#6cfc6a95ad59696ab9d15bcfcfb9030dedaf1776"
-  integrity sha512-pvWBbycsutqgJn8lAWqirfs0s8L4Lmk0p1SejqGh1SRRgiXWVybnzhwD9rlE2yBaxzUxDCyhsL8IW5kqAtqDIg==
+"@dreamworld/pwa-helpers@^1.13.1":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.13.1.tgz#825e6faf1c530591a48b6568996cdbebf8fcacc8"
+  integrity sha512-/NHwoVm7cv6w1obkFYNW2ebPc//r4bzp7CjfGKHgzLaKnqt4RwY/n8nCaqzPyaJ4RJH/HnC5zYijN5g3+PhDqw==
   dependencies:
     bowser "^2.8.1"
     lit "^2.3.1"
@@ -41,12 +34,7 @@
     lodash-es "^4.17.21"
     pwa-helpers "^0.9.1"
 
-"@lit/reactive-element@^1.3.0":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.3.2.tgz#43e470537b6ec2c23510c07812616d5aa27a17cd"
-  integrity sha512-A2e18XzPMrIh35nhIdE4uoqRzoIpEU5vZYuQN4S3Ee1zkGdYC27DP12pewbw/RLgPHzaE4kx/YqxMzebOpm0dA==
-
-"@lit/reactive-element@^1.4.0":
+"@lit/reactive-element@^1.3.0", "@lit/reactive-element@^1.4.0":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.4.1.tgz#3f587eec5708692135bc9e94cf396130604979f3"
   integrity sha512-qDv4851VFSaBWzpS02cXHclo40jsbAjRXnebNXpm0uVg32kCneZPo9RYVQtrTNICtZ+1wAYHu1ZtxWSWMbKrBw==
@@ -288,6 +276,11 @@
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
+
+"@types/trusted-types@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.2.tgz#fc25ad9943bcac11cceb8168db4f275e0e72e756"
+  integrity sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==
 
 "@webcomponents/webcomponentsjs@^2.2.10":
   version "2.4.4"
@@ -2270,28 +2263,22 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lit-element@2.3.1, lit-element@^2.1.0, lit-element@^3.2.0, lit-element@^3.2.2:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
-  integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
-  dependencies:
-    lit-html "^1.1.1"
-
-lit-html@1.2.1, lit-html@^1.1.1, lit-html@^2.2.0, lit-html@^2.3.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.1.tgz#1fb933dc1e2ddc095f60b8086277d4fcd9d62cc8"
-  integrity sha512-GSJHHXMGLZDzTRq59IUfL9FCdAlGfqNp/dEa7k7aBaaWD+JKaCjsAk9KYm2V12ItonVaYx2dprN66Zdm1AuBTQ==
-
-lit@^2.0.0:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/lit/-/lit-2.2.3.tgz#77203d8f247de7c0d4955817f89e40c927349b9c"
-  integrity sha512-5/v+r9dH3Pw/o0rhp/qYk3ERvOUclNF31bWb0FiW6MPgwdQIr+/KCt/p3zcd8aPl8lIGnxdGrVcZA+gWS6oFOQ==
+lit-element@^3.2.0, lit-element@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-3.2.2.tgz#d148ab6bf4c53a33f707a5168e087725499e5f2b"
+  integrity sha512-6ZgxBR9KNroqKb6+htkyBwD90XGRiqKDHVrW/Eh0EZ+l+iC+u+v+w3/BA5NGi4nizAVHGYvQBHUDuSmLjPp7NQ==
   dependencies:
     "@lit/reactive-element" "^1.3.0"
-    lit-element "^3.2.0"
     lit-html "^2.2.0"
 
-lit@^2.0.2, lit@^2.3.1:
+lit-html@^2.2.0, lit-html@^2.3.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-2.4.0.tgz#b510430f39a56ec959167ed1187241a4e3ab1574"
+  integrity sha512-G6qXu4JNUpY6aaF2VMfaszhO9hlWw0hOTRFDmuMheg/nDYGB+2RztUSOyrzALAbr8Nh0Y7qjhYkReh3rPnplVg==
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+lit@^2.0.0, lit@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/lit/-/lit-2.3.1.tgz#2cf1c2042da1e44c7a7cc72dff2d72303fd26f48"
   integrity sha512-TejktDR4mqG3qB32Y8Lm5Lye3c8SUehqz7qRsxe1PqGYL6me2Ef+jeQAEqh20BnnGncv4Yxy2njEIT0kzK1WCw==
