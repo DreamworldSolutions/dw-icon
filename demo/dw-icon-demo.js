@@ -1,8 +1,7 @@
-import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
+import { LitElement, html, css ,svg} from '@dreamworld/pwa-helpers/lit.js';
 import { DwIcon } from '../dw-icon';
 
 import '@material/mwc-icon';
-import { svg } from 'lit';
 
 DwIcon.addIcons(
   { 
