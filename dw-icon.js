@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
 import { styleMap } from 'lit/directives/style-map.js';
 
 // These are the mwc element needed by this element.
