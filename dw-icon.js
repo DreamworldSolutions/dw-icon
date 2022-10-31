@@ -38,6 +38,10 @@ export class DwIcon extends LitElement {
         :host([iconfont='OUTLINED']) {
           --mdc-icon-font: 'Material Icons Outlined';
         }
+
+        :host([symbol]) {
+          --mdc-icon-font: 'Material Symbols Outlined';
+        }
       `
     ];
   }
@@ -68,7 +72,13 @@ export class DwIcon extends LitElement {
        * Type of the icon. By default it shows FILLED icon.
        * Possible values: FILLED and OUTLINED
        */
-      iconFont: { type: String, reflect: true }
+      iconFont: { type: String, reflect: true },
+
+      /**
+       * When it's `true`, shows `Material Symbols` icon.
+       * [Reference](https://fonts.google.com/icons?icon.set=Material+Symbols)
+       */
+      symbol: { type: Boolean, reflect: true }
     }
   }
 

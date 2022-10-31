@@ -113,6 +113,16 @@ export class DwIconDemo extends LitElement {
         </div>
       </section>
     </section>
+
+    <section>
+      <h3> Material Symbols</h3>
+      <section class="container">
+        <div class="icon">
+          <h4>Phone Iphone</h4>
+          <dw-icon name="phone_iphone" symbol></dw-icon>
+        </div>
+      </section>
+    </section>
     `
   }
 }
