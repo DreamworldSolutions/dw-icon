@@ -136,4 +136,4 @@ export class DwIcon extends LitElement {
   }
 }
 
-window.customElements.define('dw-icon', DwIcon);
+customElements.define('dw-icon', DwIcon);
