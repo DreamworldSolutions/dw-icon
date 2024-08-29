@@ -87,6 +87,18 @@ export class DwIcon extends LitElement {
     this.iconFont = 'FILLED';
   }
 
+  connectedCallback() {
+    super.connectedCallback && super.connectedCallback();
+    this.addEventListener("mousedown", this._onStart);
+    this.addEventListener("touchstart", this._onStart);
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener("mousedown", this._onStart);
+    this.removeEventListener("touchstart", this._onStart);
+    super.disconnectedCallback && super.disconnectedCallback();
+  }
+
   render(){
     return html`
       <mwc-icon style=${this.size ? styleMap({ '--mdc-icon-size': `${this.size}px`, '--dw-icon-width': `${this.size}px`, '--dw-icon-height': `${this.size}px` }) : ''}>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
@@ -133,6 +145,10 @@ export class DwIcon extends LitElement {
       throw new Error('valid icon name is passed.');
     }
     return aIcon[aIcon.length - 1];
+  }
+
+  _onStart(e) {
+    e && e.stopPropagation();
   }
 }
 
