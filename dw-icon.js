@@ -148,7 +148,7 @@ export class DwIcon extends LitElement {
   }
 
   _onStart(e) {
-    e && e.stopPropagation(); 
+    e && e.stopPropagation();  
   }
 }
 
