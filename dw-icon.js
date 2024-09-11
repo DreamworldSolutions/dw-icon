@@ -90,12 +90,12 @@ export class DwIcon extends LitElement {
   connectedCallback() {
     super.connectedCallback && super.connectedCallback();
     this.addEventListener("mousedown", this._onStart);
-    this.addEventListener("touchstart", this._onStart);
+    this.addEventListener("touchstart", this._onStart, { passive: true });
   }
 
   disconnectedCallback() {
     this.removeEventListener("mousedown", this._onStart);
-    this.removeEventListener("touchstart", this._onStart);
+    this.removeEventListener("touchstart", this._onStart, { passive: true });
     super.disconnectedCallback && super.disconnectedCallback();
   }
 
