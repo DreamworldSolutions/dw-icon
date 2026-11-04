@@ -1,6 +1,6 @@
-import { css, html } from 'lit-element';
+import { css, html } from 'lit';
 import { LitElement } from '@dreamworld/pwa-helpers/lit-element.js';
-import { styleMap } from 'lit-html/directives/style-map.js';
+import { styleMap } from 'lit/directives/style-map.js';
 
 // These are the mwc element needed by this element.
 import '@material/mwc-icon';
@@ -39,6 +39,10 @@ export class DwIcon extends LitElement {
         :host([iconfont='OUTLINED']) {
           --mdc-icon-font: 'Material Icons Outlined';
         }
+
+        :host([iconfont='SYMBOLS_OUTLINED']) {
+          --mdc-icon-font: 'Material Symbols Outlined';
+        }
       `
     ];
   }
@@ -75,27 +79,27 @@ export class DwIcon extends LitElement {
 
   constructor(){
     super();
-    this.iconFont = 'FILLED'; 
+    this.iconFont = 'FILLED';
   }
 
   render(){
     return html`
-      <mwc-icon style=${this.size ? styleMap({ '--mdc-icon-size': `${this.size}px`}) : ''}>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
+      <mwc-icon style=${this.size ? styleMap({ '--mdc-icon-size': `${this.size}px`, '--dw-icon-width': `${this.size}px`, '--dw-icon-height': `${this.size}px` }) : ''}>${this._renderIcon(this._getIconName(this.name), this.size)}</mwc-icon>
     `;
   }
 
   /**
    * set '_iconsMap' property
-   * @param {Object} iconsMap 
+   * @param {Object} iconsMap
    */
   static addIcons(iconsMap){
     this._iconsMap = {...this._iconsMap, ...iconsMap};
   }
 
   /**
-   * 
-   * @param {String} name 
-   * @param {String} size 
+   *
+   * @param {String} name
+   * @param {String} size
    * @return {String} return icon
    */
   _renderIcon(name, size){
@@ -106,10 +110,10 @@ export class DwIcon extends LitElement {
     if(this.constructor._iconsMap && this.constructor._iconsMap[name]){
       return this.constructor._iconsMap[name];
     }
-    
+
     return name;
   }
-  
+
   /**
    * Support For `getIcon` backward compatible because in old icon name pased `{categoryName}.{iconName}`.
    * @returns {String} icon name.
